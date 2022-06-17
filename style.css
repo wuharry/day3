@@ -1,0 +1,44 @@
+/*
+
+      misc styles, nothing to do with CSS variables
+
+    */
+
+    :root {
+        /* 在root命名變數(變數會是全域),:root==html選擇器 */
+        --base: #ffc600; /* 變數base */
+        --spacing: 10px; /* 變數spacing */
+        --blur: 10px; /* 變數blur */
+      }
+      img {
+        /*tag=img選擇器，設定該圖可變化/調整的地方*/
+        padding: var(--spacing);
+        background: var(--base);
+        filter: blur(var(--blur));
+      }
+      .test {
+        /*選擇器，設定該圖可變化/調整的地方*/
+        color: var(--base);
+      }
+      
+      body {
+        text-align: center;
+        background: #193549;
+      
+        color: white;
+      
+        font-family: "helvetica neue", sans-serif;
+      
+        font-weight: 100;
+      
+        font-size: 50px;
+      }
+      
+      .controls {
+        margin-bottom: 50px;
+      }
+      
+      input {
+        width: 100px;
+      }
+      
